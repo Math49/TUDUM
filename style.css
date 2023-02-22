@@ -1,0 +1,446 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(74, 74, 74);
+}
+
+
+/*Header*/
+
+header{
+    background-color: rgb(42, 42, 42);
+    padding: 20px 150px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.title-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    text-align: center;
+}
+
+img.logo {
+    height: 5vw;
+    width: auto;
+}
+
+h1.title {
+    font-size: 2em;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: -5px;
+}
+
+nav{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+a.menu {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 0.2vw solid rgb(42, 42, 42);
+}
+
+a.menu:hover{
+    border: 0.2vw solid red;
+    border-radius: 20px;
+    color: red;
+    
+}
+
+/*Header*/
+
+
+
+/*Articles Icons*/
+
+.articles {
+    margin: 5vw 10vw 5vw 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    
+}
+
+.article {
+    box-shadow: 0px 0px 10px 0.2px rgb(86, 86, 86);
+    transition: transform 0.2s;
+}
+.article:hover{
+    transform: scale(102%);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 20vw;
+    filter: contrast(100%);
+}
+
+.image:hover {
+    filter: contrast(80%);
+}
+
+a.link-article {
+    text-decoration: none;
+}
+
+.image p{
+    display: none;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+}
+
+.image:hover p {
+    display: block;
+}
+
+#Wed, #Wednesday .banner {
+    background-image: url(Images/Wednesday.jpg);
+}
+#Stranger, #StrangerThinks .banner {
+    background-image: url(Images/Stranger.jpg);
+}
+#Peaky, #PeakyBlinders .banner {
+    background-image: url(Images/Peaky.jpg);
+}
+#Lucifer, #LuciferMorning .banner {
+    background-image: url(Images/Lucifer.jpg);
+}
+#Black, #BlackMirror .banner {
+    background-image: url(Images/Blackmirror.jpg);
+}
+#Breaking, #BreakingBad .banner {
+    background-image: url(Images/BreakingBad.jpg);
+}
+#The100, #TheHundred .banner {
+    background-image: url(Images/The100.jpg);
+}
+#Demon, #DemonSlayer .banner {
+    background-image: url(Images/DemonSlayer.webp);
+}
+
+/*Articles Icons*/
+
+
+
+
+/*Articles Content*/
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    
+}
+
+.page:not(:target) {
+    display: none;
+}
+
+.page:target {
+    display: flex;
+    position:fixed;
+    overflow: auto;
+    width: 80%;
+    height: 90%;
+    z-index: 999;
+    box-shadow: 0px 0px 500px 500px rgba(70, 70, 70, 0.5);
+    background-color: rgb(61, 61, 61);
+}
+
+.scroll {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.banner {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.close {
+    display: flex;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 92%;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+}
+
+div.Title-Article {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+h1.Title-Article {
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-size: 5vw;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+p.Title-Article {
+    color: rgb(206, 206, 206);
+    font-family: "roboto", sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+div.saisons {
+    align-items: center;
+    gap: 1vw;
+    margin-left: 5%;
+    color: rgb(240, 240, 240);
+    font-family: "roboto", sans-serif;
+}
+
+h2.saisons {
+    font-size: 2vw;
+}
+
+ul.saisons {
+    font-size: 1.5vw;
+    margin: 0;
+    list-style: circle;
+}
+
+ul.saisons li {
+    margin-top: 1vw;
+}
+
+div.synopsis {
+    margin-left: 5%;
+    color: rgb(240, 240, 240);
+    font-family: "roboto", sans-serif;
+    margin-bottom: 5%;
+}
+
+h2.synopsis {
+    font-size: 3vw;
+}
+
+p.synopsis {
+    margin-left: 5%;
+    font-size: 1.5vw;
+    width: 60%;
+}
+
+a.Netflix {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+a.Netflix:hover{
+    text-decoration: underline;
+    color: rgb(210, 210, 210);
+}
+
+/*Articles Content*/
+
+
+
+
+/*Footer*/
+
+footer {
+    
+    background-color: rgb(42, 42, 42);
+    height: 15vw;
+}
+
+.TableFooter {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+table.footer {
+    margin-top: 5vw;
+    text-align: left;
+    color: white;
+    font-family: "roboto", sans-serif;
+    height: 2vw;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer th {
+    font-size: 1.5vw;
+}
+
+.footer td {
+    font-size: 1.2vw;
+}
+
+.Fréseaux {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 2vw;
+}
+
+.footer th {
+    padding-bottom: 1vw;
+    padding-right: 10vw;
+}
+.footer td {
+    padding-right: 10vw;
+}
+
+.signature {
+    display: flex;
+    justify-content: end;
+}
+.signature img {
+    height: 3vw;
+    width: auto;
+}
+
+/*Footer*/
+
+
+
+
+
+/* Contact page */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+h2.text {
+    text-align: center;
+    
+    font-family: "roboto", sans-serif;
+    font-size: 3vw;
+    width: 50vw;
+    color: white;
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 5vw;
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    font-size: 2vw;
+    color: white;
+    font-weight: 400;
+    padding: 2vw;
+    border-radius: 2vw;
+    background-color: rgb(60, 60, 60);
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+input {
+    font-family: "roboto", sans-serif;  
+    font-size: 1.5vw;
+    background-color: rgb(82, 82, 82);
+    border: 0;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    color: white;
+}
+
+input.name {
+    width: 20vw;
+}
+input.email {
+    width: 30vw;
+}
+select.activity {
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border: 0;
+    border-radius: 2vw;
+    text-align: center;
+    width: 20vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    font-family: 'roboto',sans-serif;
+}
+textarea.message {
+    width: 30vw;
+    height: 10vw;
+    font-size: 1.5vw;
+    resize:vertical;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border: 0;
+    border-radius: 0.5vw;
+}
+
+input.send {
+    background-color: rgb(60, 60, 60);
+    font-family: "roboto", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 2vw;
+    width: 20vw;
+    height: 4vw;
+    border: 0.5vw solid white;
+    border-radius: 50px;
+    padding: 0;
+}
+
+input.send:hover {
+    color: red;
+    border-color: red;
+}
+
+.contactlogo{
+    margin-top: 5vw;
+    width: 20vw;
+}
+
+/* Contact page */
